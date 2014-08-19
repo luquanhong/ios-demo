@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface AboutViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *qqNumber;
 @property (weak, nonatomic) IBOutlet UILabel *weiBo;
 @property (weak, nonatomic) IBOutlet UIImageView *authorImage;
