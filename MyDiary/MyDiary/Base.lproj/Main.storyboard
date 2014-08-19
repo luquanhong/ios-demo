@@ -39,16 +39,16 @@
             </objects>
             <point key="canvasLocation" x="-574" y="568"/>
         </scene>
-        <!--View Controller - Location-->
+        <!--Location View Controller - Laction-->
         <scene sceneID="wZo-TD-wcX">
             <objects>
-                <viewController id="5sC-Cz-KYo" sceneMemberID="viewController">
+                <viewController id="5sC-Cz-KYo" customClass="LocationViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pYb-Rs-FKM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Location" image="location.png" id="5DJ-kW-v1s"/>
+                    <tabBarItem key="tabBarItem" title="Laction" image="location.png" id="5DJ-kW-v1s"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R81-Bl-bkE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
