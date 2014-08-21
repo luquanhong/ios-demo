@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A518659319A35D0C0023F236 /* liuming.png in Resources */ = {isa = PBXBuildFile; fileRef = A518658F19A35D0C0023F236 /* liuming.png */; };
+		A518659419A35D0C0023F236 /* liuming@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A518659019A35D0C0023F236 /* liuming@2x.png */; };
+		A518659519A35D0C0023F236 /* zhuge.png in Resources */ = {isa = PBXBuildFile; fileRef = A518659119A35D0C0023F236 /* zhuge.png */; };
+		A518659619A35D0C0023F236 /* zhuge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A518659219A35D0C0023F236 /* zhuge@2x.png */; };
+		A518659819A361C90023F236 /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = A518659719A361C90023F236 /* about.png */; };
+		A518659B19A361FE0023F236 /* diary.png in Resources */ = {isa = PBXBuildFile; fileRef = A518659919A361FD0023F236 /* diary.png */; };
+		A518659C19A361FE0023F236 /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = A518659A19A361FE0023F236 /* location.png */; };
+		A518659E19A3635F0023F236 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A518659D19A3635F0023F236 /* CoreLocation.framework */; };
+		A51865A119A364950023F236 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A51865A019A364950023F236 /* LocationViewController.m */; };
+		A51FC8D919A36F2800D25040 /* DiaryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A51FC8D819A36F2800D25040 /* DiaryListViewController.m */; };
 		A5B1A10219A33A85009863AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B1A10119A33A85009863AA /* Foundation.framework */; };
 		A5B1A10419A33A85009863AA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B1A10319A33A85009863AA /* CoreGraphics.framework */; };
 		A5B1A10619A33A85009863AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B1A10519A33A85009863AA /* UIKit.framework */; };
@@ -14,7 +24,7 @@
 		A5B1A10E19A33A85009863AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B1A10D19A33A85009863AA /* main.m */; };
 		A5B1A11219A33A85009863AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B1A11119A33A85009863AA /* AppDelegate.m */; };
 		A5B1A11519A33A85009863AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5B1A11319A33A85009863AA /* Main.storyboard */; };
-		A5B1A11819A33A85009863AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B1A11719A33A85009863AA /* ViewController.m */; };
+		A5B1A11819A33A85009863AA /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B1A11719A33A85009863AA /* AboutViewController.m */; };
 		A5B1A11A19A33A85009863AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5B1A11919A33A85009863AA /* Images.xcassets */; };
 		A5B1A12119A33A85009863AA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B1A12019A33A85009863AA /* XCTest.framework */; };
 		A5B1A12219A33A85009863AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B1A10119A33A85009863AA /* Foundation.framework */; };
@@ -34,6 +44,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A518658F19A35D0C0023F236 /* liuming.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = liuming.png; sourceTree = "<group>"; };
+		A518659019A35D0C0023F236 /* liuming@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "liuming@2x.png"; sourceTree = "<group>"; };
+		A518659119A35D0C0023F236 /* zhuge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zhuge.png; sourceTree = "<group>"; };
+		A518659219A35D0C0023F236 /* zhuge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zhuge@2x.png"; sourceTree = "<group>"; };
+		A518659719A361C90023F236 /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about.png; sourceTree = "<group>"; };
+		A518659919A361FD0023F236 /* diary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diary.png; sourceTree = "<group>"; };
+		A518659A19A361FE0023F236 /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
+		A518659D19A3635F0023F236 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A518659F19A364950023F236 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
+		A51865A019A364950023F236 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
+		A51FC8D719A36F2800D25040 /* DiaryListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiaryListViewController.h; sourceTree = "<group>"; };
+		A51FC8D819A36F2800D25040 /* DiaryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiaryListViewController.m; sourceTree = "<group>"; };
 		A5B1A0FE19A33A85009863AA /* MyDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5B1A10119A33A85009863AA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A5B1A10319A33A85009863AA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,8 +67,8 @@
 		A5B1A11019A33A85009863AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A5B1A11119A33A85009863AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A5B1A11419A33A85009863AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A5B1A11619A33A85009863AA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A5B1A11719A33A85009863AA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A5B1A11619A33A85009863AA /* AboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		A5B1A11719A33A85009863AA /* AboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		A5B1A11919A33A85009863AA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A5B1A11F19A33A85009863AA /* MyDiaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyDiaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5B1A12019A33A85009863AA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -60,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A518659E19A3635F0023F236 /* CoreLocation.framework in Frameworks */,
 				A5B1A10419A33A85009863AA /* CoreGraphics.framework in Frameworks */,
 				A5B1A10619A33A85009863AA /* UIKit.framework in Frameworks */,
 				A5B1A10219A33A85009863AA /* Foundation.framework in Frameworks */,
@@ -79,9 +102,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A518658E19A35CDF0023F236 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A518659919A361FD0023F236 /* diary.png */,
+				A518659A19A361FE0023F236 /* location.png */,
+				A518659719A361C90023F236 /* about.png */,
+				A518658F19A35D0C0023F236 /* liuming.png */,
+				A518659019A35D0C0023F236 /* liuming@2x.png */,
+				A518659119A35D0C0023F236 /* zhuge.png */,
+				A518659219A35D0C0023F236 /* zhuge@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		A5B1A0F519A33A85009863AA = {
 			isa = PBXGroup;
 			children = (
+				A518658E19A35CDF0023F236 /* Resources */,
 				A5B1A10719A33A85009863AA /* MyDiary */,
 				A5B1A12619A33A85009863AA /* MyDiaryTests */,
 				A5B1A10019A33A85009863AA /* Frameworks */,
@@ -101,6 +139,7 @@
 		A5B1A10019A33A85009863AA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A518659D19A3635F0023F236 /* CoreLocation.framework */,
 				A5B1A10119A33A85009863AA /* Foundation.framework */,
 				A5B1A10319A33A85009863AA /* CoreGraphics.framework */,
 				A5B1A10519A33A85009863AA /* UIKit.framework */,
@@ -115,8 +154,12 @@
 				A5B1A11019A33A85009863AA /* AppDelegate.h */,
 				A5B1A11119A33A85009863AA /* AppDelegate.m */,
 				A5B1A11319A33A85009863AA /* Main.storyboard */,
-				A5B1A11619A33A85009863AA /* ViewController.h */,
-				A5B1A11719A33A85009863AA /* ViewController.m */,
+				A5B1A11619A33A85009863AA /* AboutViewController.h */,
+				A5B1A11719A33A85009863AA /* AboutViewController.m */,
+				A518659F19A364950023F236 /* LocationViewController.h */,
+				A51865A019A364950023F236 /* LocationViewController.m */,
+				A51FC8D719A36F2800D25040 /* DiaryListViewController.h */,
+				A51FC8D819A36F2800D25040 /* DiaryListViewController.m */,
 				A5B1A11919A33A85009863AA /* Images.xcassets */,
 				A5B1A10819A33A85009863AA /* Supporting Files */,
 			);
@@ -229,8 +272,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5B1A11A19A33A85009863AA /* Images.xcassets in Resources */,
+				A518659519A35D0C0023F236 /* zhuge.png in Resources */,
+				A518659C19A361FE0023F236 /* location.png in Resources */,
 				A5B1A10C19A33A85009863AA /* InfoPlist.strings in Resources */,
+				A518659419A35D0C0023F236 /* liuming@2x.png in Resources */,
 				A5B1A11519A33A85009863AA /* Main.storyboard in Resources */,
+				A518659619A35D0C0023F236 /* zhuge@2x.png in Resources */,
+				A518659319A35D0C0023F236 /* liuming.png in Resources */,
+				A518659B19A361FE0023F236 /* diary.png in Resources */,
+				A518659819A361C90023F236 /* about.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,9 +299,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5B1A11819A33A85009863AA /* ViewController.m in Sources */,
+				A5B1A11819A33A85009863AA /* AboutViewController.m in Sources */,
 				A5B1A11219A33A85009863AA /* AppDelegate.m in Sources */,
 				A5B1A10E19A33A85009863AA /* main.m in Sources */,
+				A51FC8D919A36F2800D25040 /* DiaryListViewController.m in Sources */,
+				A51865A119A364950023F236 /* LocationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +428,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyDiary/MyDiary-Prefix.pch";
 				INFOPLIST_FILE = "MyDiary/MyDiary-Info.plist";
@@ -389,6 +442,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyDiary/MyDiary-Prefix.pch";
 				INFOPLIST_FILE = "MyDiary/MyDiary-Info.plist";
@@ -456,6 +510,7 @@
 				A5B1A13219A33A85009863AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5B1A13319A33A85009863AA /* Build configuration list for PBXNativeTarget "MyDiaryTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +519,7 @@
 				A5B1A13519A33A85009863AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

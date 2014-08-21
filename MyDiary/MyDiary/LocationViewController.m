@@ -38,6 +38,8 @@
     
     [self.locationManager startUpdatingLocation];
     
+    NSLog(@"location viewdidload exit");
+    
     //[self.locationManager setPurpose:@"I hope to use the location server"];
 }
 

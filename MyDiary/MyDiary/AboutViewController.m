@@ -53,6 +53,8 @@
         default:
             break;
     }
+    
+    NSLog(@"about viewdidload exit");
 }
 
 - (void)didReceiveMemoryWarning
