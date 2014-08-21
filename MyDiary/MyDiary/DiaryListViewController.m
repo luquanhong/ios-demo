@@ -28,6 +28,14 @@
     [super viewDidLoad];
     NSLog(@"diary list view viewdidload enter");
     
+    UIBarButtonItem* bbi = [[ UIBarButtonItem alloc] initWithBarButtonSystemItem: UIBarButtonSystemItemAdd target: self  action: @selector(addNewDiary:) ];
+    
+    [[self navigationItem] setRightBarButtonItem: bbi];
+    
+    [[self navigationItem] setTitle:@"Diary List"];
+    
+    [[self navigationItem] setLeftBarButtonItem:[self editButtonItem]];
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -140,5 +148,11 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
+- (void)addNewDiary:(id)sender
+{
+    NSLog(@"addNewDiary");
+}
 
 @end
