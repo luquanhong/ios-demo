@@ -27,6 +27,13 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    [df setDateFormat:@"yyyy 'year' m 'mouth' d 'day' 'at' h:m a"];
+    NSString *date = [df stringFromDate:[NSDate date]];
+    _diaryDate.text = date;
+    
+    self.diary = [[Diary alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,6 +53,7 @@
 }
 */
 
+#pragma mark - action
 - (IBAction)cancel:(id)sender
 {
     [self.delegate createDiaryViewControllerDidCancel:self];
@@ -53,7 +61,18 @@
 
 - (IBAction)saveDiary:(id)sender
 {
-    [self.delegate createDiaryViewController:self didSaveWithDiary:nil];
+    
+    self.diary.title = self.diaryTitle.text;
+    self.diary.content = self.diaryContent.text;
+    
+    [self.delegate createDiaryViewController:self didSaveWithDiary:self.diary];
 }
 
+#pragma mark - TextField delegate
+
+- (BOOL)textFieldShouldReturn:(UITextField*)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
 @end

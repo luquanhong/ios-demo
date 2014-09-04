@@ -205,8 +205,13 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)createDiaryViewController:(CreateDiaryViewController *)createDiaryViewController didSaveWithDiary:(Diary *)diary
+- (void)createDiaryViewController:(CreateDiaryViewController *)createDiaryViewController didSaveWithDiary:(Diary *)theDiary
 {
+    Diary *diary = theDiary;
+    
     [self dismissViewControllerAnimated:YES completion:nil];
+    [self.diaries addObject:diary];
+    [self.tableView reloadData];
+
 }
 @end
