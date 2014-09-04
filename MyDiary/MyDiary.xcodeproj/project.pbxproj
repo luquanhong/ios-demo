@@ -17,6 +17,8 @@
 		A518659E19A3635F0023F236 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A518659D19A3635F0023F236 /* CoreLocation.framework */; };
 		A51865A119A364950023F236 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A51865A019A364950023F236 /* LocationViewController.m */; };
 		A51FC8D919A36F2800D25040 /* DiaryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A51FC8D819A36F2800D25040 /* DiaryListViewController.m */; };
+		A555FC6E19B8669B0015DD7F /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A555FC6D19B8669B0015DD7F /* CameraViewController.m */; };
+		A555FC7419B88C270015DD7F /* ImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A555FC7319B88C270015DD7F /* ImageStore.m */; };
 		A5A52A3E19B81CFE00F9F919 /* CreateDiaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A52A3D19B81CFE00F9F919 /* CreateDiaryViewController.m */; };
 		A5AE941019A5DF87003CA51A /* DetailDiaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5AE940F19A5DF87003CA51A /* DetailDiaryViewController.m */; };
 		A5AE941619A6DAEC003CA51A /* Diary.m in Sources */ = {isa = PBXBuildFile; fileRef = A5AE941519A6DAEC003CA51A /* Diary.m */; };
@@ -55,16 +57,20 @@
 		A518659919A361FD0023F236 /* diary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diary.png; sourceTree = "<group>"; };
 		A518659A19A361FE0023F236 /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
 		A518659D19A3635F0023F236 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		A518659F19A364950023F236 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
-		A51865A019A364950023F236 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
-		A51FC8D719A36F2800D25040 /* DiaryListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiaryListViewController.h; sourceTree = "<group>"; };
-		A51FC8D819A36F2800D25040 /* DiaryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiaryListViewController.m; sourceTree = "<group>"; };
-		A5A52A3C19B81CFE00F9F919 /* CreateDiaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateDiaryViewController.h; sourceTree = "<group>"; };
-		A5A52A3D19B81CFE00F9F919 /* CreateDiaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateDiaryViewController.m; sourceTree = "<group>"; };
-		A5AE940E19A5DF87003CA51A /* DetailDiaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailDiaryViewController.h; sourceTree = "<group>"; };
-		A5AE940F19A5DF87003CA51A /* DetailDiaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailDiaryViewController.m; sourceTree = "<group>"; };
-		A5AE941419A6DAEC003CA51A /* Diary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Diary.h; sourceTree = "<group>"; };
-		A5AE941519A6DAEC003CA51A /* Diary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Diary.m; sourceTree = "<group>"; };
+		A518659F19A364950023F236 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationViewController.h; path = ../../LocationViewController.h; sourceTree = "<group>"; };
+		A51865A019A364950023F236 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationViewController.m; path = ../../LocationViewController.m; sourceTree = "<group>"; };
+		A51FC8D719A36F2800D25040 /* DiaryListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DiaryListViewController.h; path = ../../DiaryListViewController.h; sourceTree = "<group>"; };
+		A51FC8D819A36F2800D25040 /* DiaryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiaryListViewController.m; path = ../../DiaryListViewController.m; sourceTree = "<group>"; };
+		A555FC6C19B8669B0015DD7F /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraViewController.h; path = ../../CameraViewController.h; sourceTree = "<group>"; };
+		A555FC6D19B8669B0015DD7F /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CameraViewController.m; path = ../../CameraViewController.m; sourceTree = "<group>"; };
+		A555FC7219B88C270015DD7F /* ImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageStore.h; sourceTree = "<group>"; };
+		A555FC7319B88C270015DD7F /* ImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageStore.m; sourceTree = "<group>"; };
+		A5A52A3C19B81CFE00F9F919 /* CreateDiaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreateDiaryViewController.h; path = ../../CreateDiaryViewController.h; sourceTree = "<group>"; };
+		A5A52A3D19B81CFE00F9F919 /* CreateDiaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreateDiaryViewController.m; path = ../../CreateDiaryViewController.m; sourceTree = "<group>"; };
+		A5AE940E19A5DF87003CA51A /* DetailDiaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailDiaryViewController.h; path = ../../DetailDiaryViewController.h; sourceTree = "<group>"; };
+		A5AE940F19A5DF87003CA51A /* DetailDiaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailDiaryViewController.m; path = ../../DetailDiaryViewController.m; sourceTree = "<group>"; };
+		A5AE941419A6DAEC003CA51A /* Diary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Diary.h; path = ../Diary.h; sourceTree = "<group>"; };
+		A5AE941519A6DAEC003CA51A /* Diary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Diary.m; path = ../Diary.m; sourceTree = "<group>"; };
 		A5B1A0FE19A33A85009863AA /* MyDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5B1A10119A33A85009863AA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A5B1A10319A33A85009863AA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -73,11 +79,11 @@
 		A5B1A10B19A33A85009863AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A5B1A10D19A33A85009863AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A5B1A10F19A33A85009863AA /* MyDiary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyDiary-Prefix.pch"; sourceTree = "<group>"; };
-		A5B1A11019A33A85009863AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		A5B1A11119A33A85009863AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A5B1A11019A33A85009863AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = MyDiary/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		A5B1A11119A33A85009863AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = MyDiary/AppDelegate.m; sourceTree = SOURCE_ROOT; };
 		A5B1A11419A33A85009863AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A5B1A11619A33A85009863AA /* AboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
-		A5B1A11719A33A85009863AA /* AboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		A5B1A11619A33A85009863AA /* AboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AboutViewController.h; path = ../../AboutViewController.h; sourceTree = "<group>"; };
+		A5B1A11719A33A85009863AA /* AboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AboutViewController.m; path = ../../AboutViewController.m; sourceTree = "<group>"; };
 		A5B1A11919A33A85009863AA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A5B1A11F19A33A85009863AA /* MyDiaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyDiaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5B1A12019A33A85009863AA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -125,6 +131,47 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		A555FC7019B888480015DD7F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A5AE941419A6DAEC003CA51A /* Diary.h */,
+				A5AE941519A6DAEC003CA51A /* Diary.m */,
+				A555FC7219B88C270015DD7F /* ImageStore.h */,
+				A555FC7319B88C270015DD7F /* ImageStore.m */,
+			);
+			name = Model;
+			path = mode;
+			sourceTree = "<group>";
+		};
+		A555FC7119B888960015DD7F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A5B1A11019A33A85009863AA /* AppDelegate.h */,
+				A5B1A11119A33A85009863AA /* AppDelegate.m */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A555FC7519B896230015DD7F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A5B1A11619A33A85009863AA /* AboutViewController.h */,
+				A5B1A11719A33A85009863AA /* AboutViewController.m */,
+				A518659F19A364950023F236 /* LocationViewController.h */,
+				A51865A019A364950023F236 /* LocationViewController.m */,
+				A51FC8D719A36F2800D25040 /* DiaryListViewController.h */,
+				A51FC8D819A36F2800D25040 /* DiaryListViewController.m */,
+				A5AE940E19A5DF87003CA51A /* DetailDiaryViewController.h */,
+				A5AE940F19A5DF87003CA51A /* DetailDiaryViewController.m */,
+				A555FC6D19B8669B0015DD7F /* CameraViewController.m */,
+				A5A52A3C19B81CFE00F9F919 /* CreateDiaryViewController.h */,
+				A5A52A3D19B81CFE00F9F919 /* CreateDiaryViewController.m */,
+				A555FC6C19B8669B0015DD7F /* CameraViewController.h */,
+			);
+			name = Controller;
+			path = mode/Controller;
+			sourceTree = "<group>";
+		};
 		A5B1A0F519A33A85009863AA = {
 			isa = PBXGroup;
 			children = (
@@ -160,21 +207,10 @@
 		A5B1A10719A33A85009863AA /* MyDiary */ = {
 			isa = PBXGroup;
 			children = (
-				A5AE941419A6DAEC003CA51A /* Diary.h */,
-				A5AE941519A6DAEC003CA51A /* Diary.m */,
-				A5B1A11019A33A85009863AA /* AppDelegate.h */,
-				A5B1A11119A33A85009863AA /* AppDelegate.m */,
+				A555FC7119B888960015DD7F /* App */,
+				A555FC7019B888480015DD7F /* Model */,
+				A555FC7519B896230015DD7F /* Controller */,
 				A5B1A11319A33A85009863AA /* Main.storyboard */,
-				A5B1A11619A33A85009863AA /* AboutViewController.h */,
-				A5B1A11719A33A85009863AA /* AboutViewController.m */,
-				A518659F19A364950023F236 /* LocationViewController.h */,
-				A51865A019A364950023F236 /* LocationViewController.m */,
-				A51FC8D719A36F2800D25040 /* DiaryListViewController.h */,
-				A51FC8D819A36F2800D25040 /* DiaryListViewController.m */,
-				A5AE940E19A5DF87003CA51A /* DetailDiaryViewController.h */,
-				A5AE940F19A5DF87003CA51A /* DetailDiaryViewController.m */,
-				A5A52A3C19B81CFE00F9F919 /* CreateDiaryViewController.h */,
-				A5A52A3D19B81CFE00F9F919 /* CreateDiaryViewController.m */,
 				A5B1A11919A33A85009863AA /* Images.xcassets */,
 				A5B1A10819A33A85009863AA /* Supporting Files */,
 			);
@@ -320,6 +356,8 @@
 				A5AE941019A5DF87003CA51A /* DetailDiaryViewController.m in Sources */,
 				A5B1A11219A33A85009863AA /* AppDelegate.m in Sources */,
 				A5B1A10E19A33A85009863AA /* main.m in Sources */,
+				A555FC6E19B8669B0015DD7F /* CameraViewController.m in Sources */,
+				A555FC7419B88C270015DD7F /* ImageStore.m in Sources */,
 				A51FC8D919A36F2800D25040 /* DiaryListViewController.m in Sources */,
 				A51865A119A364950023F236 /* LocationViewController.m in Sources */,
 			);

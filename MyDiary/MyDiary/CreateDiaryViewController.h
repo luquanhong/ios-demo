@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Diary.h"
+#import "CameraViewController.h"
 
 @class CreateDiaryViewController;
 
@@ -19,7 +20,7 @@
 @end
 
 
-@interface CreateDiaryViewController : UIViewController <UITextFieldDelegate>
+@interface CreateDiaryViewController : UIViewController <UITextFieldDelegate, CameraViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *diaryDate;
 @property (weak, nonatomic) IBOutlet UITextField *diaryTitle;
 @property (weak, nonatomic) IBOutlet UITextView *diaryContent;

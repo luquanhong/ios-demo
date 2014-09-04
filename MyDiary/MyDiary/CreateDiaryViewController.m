@@ -34,6 +34,7 @@
     _diaryDate.text = date;
     
     self.diary = [[Diary alloc] init];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,7 +43,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -50,8 +51,16 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+    //if( [segue.identifier isEqualToString:@"TakePicture"])
+    if( [(UIViewController *)segue.destinationViewController isKindOfClass:[CameraViewController class]] )
+    {
+        CameraViewController *cameraViewController = (CameraViewController*)[segue destinationViewController];
+        cameraViewController.delegate = self;
+        cameraViewController.diary = self.diary;
+    }
 }
-*/
+
 
 #pragma mark - action
 - (IBAction)cancel:(id)sender
@@ -75,4 +84,12 @@
     [textField resignFirstResponder];
     return YES;
 }
+
+#pragma mark - CameraViewController delegate
+
+- (void)cameraViewControllerDidReturn:(CameraViewController*)cameraViewController
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 @end

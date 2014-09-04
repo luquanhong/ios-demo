@@ -14,6 +14,8 @@
 @property (strong, nonatomic) NSString *content;
 @property (nonatomic, readonly, getter = dateCreate) NSData *dateCreate;
 
+@property (strong, nonatomic) NSString *photoKey;
+
 + (id)createData;
 
 - (id)initWithTitle:(NSString*)theTitle content:(NSString *)theContent;

@@ -12,6 +12,7 @@
 @interface DetailDiaryViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *diaryTitle;
 @property (weak, nonatomic) IBOutlet UITextView *diaryContent;
+@property (weak, nonatomic) IBOutlet UIImageView *diaryPhoto;
 
 //@property (strong, nonatomic) NSString *title;
 //@property (strong, nonatomic) NSString *content;

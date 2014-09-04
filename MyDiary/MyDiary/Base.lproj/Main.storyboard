@@ -64,7 +64,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Wzl-vs-K3j">
-                                <rect key="frame" x="15" y="84" width="300" height="44"/>
+                                <rect key="frame" x="10" y="84" width="300" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem title="Return" id="KiU-Ot-oaF">
@@ -73,7 +73,11 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="iHH-0z-ZED"/>
-                                    <barButtonItem systemItem="camera" id="4Ge-lH-SGN"/>
+                                    <barButtonItem systemItem="camera" id="4Ge-lH-SGN">
+                                        <connections>
+                                            <segue destination="mps-Fa-BhE" kind="modal" identifier="TakePicture" modalTransitionStyle="coverVertical" id="Zxp-Mu-54X"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem title="Audio" id="SBA-hb-7RN"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="5fa-5G-fHa"/>
                                     <barButtonItem title="Save" id="z4V-Zn-CsR">
@@ -120,6 +124,52 @@
             </objects>
             <point key="canvasLocation" x="278" y="-343"/>
         </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="JIW-Vr-a89">
+            <objects>
+                <viewController id="mps-Fa-BhE" customClass="CameraViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KUU-y0-cJ2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="9dx-fc-q7E">
+                                <rect key="frame" x="-9" y="79" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Return" id="gJL-we-XAr">
+                                        <connections>
+                                            <action selector="doDismiss:" destination="mps-Fa-BhE" id="vVP-55-Nhm"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="IfM-V2-cZc"/>
+                                    <barButtonItem systemItem="camera" id="NA3-CB-5dP">
+                                        <connections>
+                                            <action selector="takePicture:" destination="mps-Fa-BhE" id="uCH-mQ-rzY"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Picture to current Diary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lw4-52-k3Z">
+                                <rect key="frame" x="40" y="129" width="240" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="PDJ-a2-CDR">
+                                <rect key="frame" x="40" y="182" width="240" height="335"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="picture" destination="PDJ-a2-CDR" id="yaV-Va-gtB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zmj-qo-2NA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="722" y="-572"/>
+        </scene>
         <!--Detail Diary View Controller-->
         <scene sceneID="q4p-LG-Eqg">
             <objects>
@@ -136,19 +186,24 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="pFS-oJ-vtx">
-                                <rect key="frame" x="20" y="144" width="280" height="372"/>
+                                <rect key="frame" x="20" y="144" width="280" height="154"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="uYw-b5-Y1c">
+                                <rect key="frame" x="20" y="318" width="269" height="186"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="dDh-0g-RNY"/>
                     <connections>
                         <outlet property="diaryContent" destination="pFS-oJ-vtx" id="VC1-1g-Ma7"/>
+                        <outlet property="diaryPhoto" destination="uYw-b5-Y1c" id="PiA-n7-bh6"/>
                         <outlet property="diaryTitle" destination="59a-Jj-FTC" id="9Qq-Qk-m9d"/>
                     </connections>
                 </viewController>

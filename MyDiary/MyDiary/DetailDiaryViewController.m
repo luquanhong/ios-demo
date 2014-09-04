@@ -7,6 +7,7 @@
 //
 
 #import "DetailDiaryViewController.h"
+#import "ImageStore.h"
 
 @interface DetailDiaryViewController ()
 
@@ -43,6 +44,15 @@
 //    self.diaryContent.text = self.content;
     self.diaryTitle.text = self.diary.title;
     self.diaryContent.text = self.diary.content;
+    
+    NSString *photoKey = [self.diary photoKey];
+    
+    if(photoKey){
+        UIImage *imageToDisplay = [[ImageStore defaultImageStore] imageForKey: photoKey];
+        [self.diaryPhoto setImage:imageToDisplay];
+    }else{
+        [self.diaryPhoto setImage:nil];
+    }
     
     [[self navigationItem] setTitle:@"diary content"];
 }
