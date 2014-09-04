@@ -7,6 +7,8 @@
 //
 
 #import "DiaryListViewController.h"
+#import "DetailDiaryViewController.h"
+#import "Diary.h"
 
 @interface DiaryListViewController ()
 
@@ -27,6 +29,16 @@
 {
     [super viewDidLoad];
     NSLog(@"diary list view viewdidload enter");
+    
+    
+    Diary *a = [[Diary alloc] initWithTitle:@"the First Diary" content:@"the first diary content" ];
+    Diary *b = [[Diary alloc] initWithTitle:@"the Second Diary" content:@"the second diary content" ];
+    Diary *c = [[Diary alloc] initWithTitle:@"the Third Diary" content:@"the third diary content" ];
+    Diary *d = [[Diary alloc] initWithTitle:@"the Forth Diary" content:@"the forth diary content" ];
+    Diary *e = [[Diary alloc] initWithTitle:@"the Five Diary" content:@"the five diary content" ];
+    
+    self.diaries = [NSMutableArray arrayWithObjects:a, b, c, d, e, nil];
+    
     
     UIBarButtonItem* bbi = [[ UIBarButtonItem alloc] initWithBarButtonSystemItem: UIBarButtonSystemItemAdd target: self  action: @selector(addNewDiary:) ];
     
@@ -55,14 +67,14 @@
 {
 
     // Return the number of sections.
-    return 2;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 
     // Return the number of rows in the section.
-    return 8;
+    return self.diaries.count;
 }
 
 
@@ -79,25 +91,45 @@
     
     // Configure the cell...
     
-    cell.textLabel.text = @"first cell";
-    cell.detailTextLabel.text = @"this is the cell description";
+//    cell.textLabel.text = @"first cell";
+//    cell.detailTextLabel.text = @"this is the cell description";
+    Diary *diary = [self.diaries objectAtIndex:indexPath.row];
+    cell.textLabel.text = [diary title];
+    cell.detailTextLabel.text = [[diary dateCreate] description];
+    
     
     return cell;
 }
 
 
-- (void)tableView:(UITableView*)tableView didSelectRowAtIndexPath:(NSIndexPath*)indexPath
-{
+//- (void)tableView:(UITableView*)tableView didSelectRowAtIndexPath:(NSIndexPath*)indexPath
+//{
+//
+//    NSLog(@"table view the %d row is pushed by customer", indexPath.row);
+//    
+//    NSString* messageString = [NSString  stringWithFormat:@"the user check the %d row", indexPath.row];
+//    
+//    
+//    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"user check button" message:messageString delegate:nil
+//                     cancelButtonTitle:@"sure" otherButtonTitles: @"other",  nil];
+//    
+//    [alert show];
+//}
 
-    NSLog(@"table view the %d row is pushed by customer", indexPath.row);
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    NSInteger row = [indexPath row];
     
-    NSString* messageString = [NSString  stringWithFormat:@"the user check the %d row", indexPath.row];
+    NSLog(@" selected the row %d", row);
     
+    DetailDiaryViewController* detailDiaryViewController = (DetailDiaryViewController*)[segue destinationViewController];
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"user check button" message:messageString delegate:nil
-                     cancelButtonTitle:@"sure" otherButtonTitles: @"other",  nil];
+//    detailDiaryViewController.title = @"first cell";
+//    detailDiaryViewController.content = @"this is the cell description";
     
-    [alert show];
+    Diary *diary = [self.diaries objectAtIndex:row];
+    detailDiaryViewController.diary = diary;
 }
 
 /*
