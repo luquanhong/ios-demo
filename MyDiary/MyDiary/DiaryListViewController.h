@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CreateDiaryViewController.h"
 
-@interface DiaryListViewController : UITableViewController<UITableViewDataSource>
+@interface DiaryListViewController : UITableViewController<UITableViewDataSource,UITableViewDelegate, CreateDiaryViewControllerDelegate>
 
 @property (nonatomic, strong) NSArray *diaries;
 @end

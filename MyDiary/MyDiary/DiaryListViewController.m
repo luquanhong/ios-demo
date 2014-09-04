@@ -39,10 +39,10 @@
     
     self.diaries = [NSMutableArray arrayWithObjects:a, b, c, d, e, nil];
     
-    
-    UIBarButtonItem* bbi = [[ UIBarButtonItem alloc] initWithBarButtonSystemItem: UIBarButtonSystemItemAdd target: self  action: @selector(addNewDiary:) ];
-    
-    [[self navigationItem] setRightBarButtonItem: bbi];
+//    
+//    UIBarButtonItem* bbi = [[ UIBarButtonItem alloc] initWithBarButtonSystemItem: UIBarButtonSystemItemAdd target: self  action: @selector(addNewDiary:) ];
+//    
+//    [[self navigationItem] setRightBarButtonItem: bbi];
     
     [[self navigationItem] setTitle:@"Diary List"];
     
@@ -118,18 +118,29 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-    NSInteger row = [indexPath row];
     
-    NSLog(@" selected the row %d", row);
+    if ([segue.identifier isEqualToString:@"DetailDiary"]) {
+        
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        NSInteger row = [indexPath row];
+        
+        NSLog(@" selected the row %d", row);
+        
+        DetailDiaryViewController* detailDiaryViewController = (DetailDiaryViewController*)[segue destinationViewController];
+        
+    //    detailDiaryViewController.title = @"first cell";
+    //    detailDiaryViewController.content = @"this is the cell description";
+        
+        Diary *diary = [self.diaries objectAtIndex:row];
+        detailDiaryViewController.diary = diary;
+            
+    }
     
-    DetailDiaryViewController* detailDiaryViewController = (DetailDiaryViewController*)[segue destinationViewController];
-    
-//    detailDiaryViewController.title = @"first cell";
-//    detailDiaryViewController.content = @"this is the cell description";
-    
-    Diary *diary = [self.diaries objectAtIndex:row];
-    detailDiaryViewController.diary = diary;
+    if ( [segue.identifier isEqualToString:@"AddDiary"]) {
+        NSLog(@"entry the create diary");
+        CreateDiaryViewController *createDiaryViewController = (CreateDiaryViewController*)[segue destinationViewController];
+        createDiaryViewController.delegate = self;
+    }
 }
 
 /*
@@ -187,4 +198,15 @@
     NSLog(@"addNewDiary");
 }
 
+#pragma makr - CreateDiaryViewController
+
+- (void)createDiaryViewControllerDidCancel:(CreateDiaryViewController *)createDiaryViewController
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)createDiaryViewController:(CreateDiaryViewController *)createDiaryViewController didSaveWithDiary:(Diary *)diary
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end

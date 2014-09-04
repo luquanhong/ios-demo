@@ -17,6 +17,7 @@
 		A518659E19A3635F0023F236 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A518659D19A3635F0023F236 /* CoreLocation.framework */; };
 		A51865A119A364950023F236 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A51865A019A364950023F236 /* LocationViewController.m */; };
 		A51FC8D919A36F2800D25040 /* DiaryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A51FC8D819A36F2800D25040 /* DiaryListViewController.m */; };
+		A5A52A3E19B81CFE00F9F919 /* CreateDiaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A52A3D19B81CFE00F9F919 /* CreateDiaryViewController.m */; };
 		A5AE941019A5DF87003CA51A /* DetailDiaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5AE940F19A5DF87003CA51A /* DetailDiaryViewController.m */; };
 		A5AE941619A6DAEC003CA51A /* Diary.m in Sources */ = {isa = PBXBuildFile; fileRef = A5AE941519A6DAEC003CA51A /* Diary.m */; };
 		A5B1A10219A33A85009863AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B1A10119A33A85009863AA /* Foundation.framework */; };
@@ -58,6 +59,8 @@
 		A51865A019A364950023F236 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
 		A51FC8D719A36F2800D25040 /* DiaryListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiaryListViewController.h; sourceTree = "<group>"; };
 		A51FC8D819A36F2800D25040 /* DiaryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiaryListViewController.m; sourceTree = "<group>"; };
+		A5A52A3C19B81CFE00F9F919 /* CreateDiaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateDiaryViewController.h; sourceTree = "<group>"; };
+		A5A52A3D19B81CFE00F9F919 /* CreateDiaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateDiaryViewController.m; sourceTree = "<group>"; };
 		A5AE940E19A5DF87003CA51A /* DetailDiaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailDiaryViewController.h; sourceTree = "<group>"; };
 		A5AE940F19A5DF87003CA51A /* DetailDiaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailDiaryViewController.m; sourceTree = "<group>"; };
 		A5AE941419A6DAEC003CA51A /* Diary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Diary.h; sourceTree = "<group>"; };
@@ -170,6 +173,8 @@
 				A51FC8D819A36F2800D25040 /* DiaryListViewController.m */,
 				A5AE940E19A5DF87003CA51A /* DetailDiaryViewController.h */,
 				A5AE940F19A5DF87003CA51A /* DetailDiaryViewController.m */,
+				A5A52A3C19B81CFE00F9F919 /* CreateDiaryViewController.h */,
+				A5A52A3D19B81CFE00F9F919 /* CreateDiaryViewController.m */,
 				A5B1A11919A33A85009863AA /* Images.xcassets */,
 				A5B1A10819A33A85009863AA /* Supporting Files */,
 			);
@@ -311,6 +316,7 @@
 			files = (
 				A5B1A11819A33A85009863AA /* AboutViewController.m in Sources */,
 				A5AE941619A6DAEC003CA51A /* Diary.m in Sources */,
+				A5A52A3E19B81CFE00F9F919 /* CreateDiaryViewController.m in Sources */,
 				A5AE941019A5DF87003CA51A /* DetailDiaryViewController.m in Sources */,
 				A5B1A11219A33A85009863AA /* AppDelegate.m in Sources */,
 				A5B1A10E19A33A85009863AA /* main.m in Sources */,

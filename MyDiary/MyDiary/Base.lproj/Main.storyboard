@@ -38,16 +38,84 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="1" green="0.011788656139999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <segue destination="RMv-ur-mVj" kind="push" id="43j-Zt-hph"/>
+                                    <segue destination="RMv-ur-mVj" kind="push" identifier="DetailDiary" id="43j-Zt-hph"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <navigationItem key="navigationItem" id="anZ-ju-PLG"/>
+                    <navigationItem key="navigationItem" id="anZ-ju-PLG">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="p2v-48-A5D">
+                            <connections>
+                                <segue destination="li6-pN-npF" kind="modal" identifier="AddDiary" id="7oE-PX-ts5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MYX-R2-Dhg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-40" y="241"/>
+        </scene>
+        <!--Create Diary View Controller-->
+        <scene sceneID="PHu-VX-2dl">
+            <objects>
+                <viewController id="li6-pN-npF" customClass="CreateDiaryViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xbG-jE-WfG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Wzl-vs-K3j">
+                                <rect key="frame" x="15" y="84" width="300" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Return" id="KiU-Ot-oaF">
+                                        <connections>
+                                            <action selector="cancel:" destination="li6-pN-npF" id="K6W-jB-shH"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="iHH-0z-ZED"/>
+                                    <barButtonItem systemItem="camera" id="4Ge-lH-SGN"/>
+                                    <barButtonItem title="Audio" id="SBA-hb-7RN"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="5fa-5G-fHa"/>
+                                    <barButtonItem title="Save" id="z4V-Zn-CsR">
+                                        <connections>
+                                            <action selector="saveDiary:" destination="li6-pN-npF" id="1LO-gB-VpE"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date&amp;Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bKv-p0-SsZ">
+                                <rect key="frame" x="25" y="128" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Diary Title" textAlignment="center" minimumFontSize="17" id="rL3-SL-sgZ">
+                                <rect key="frame" x="20" y="157" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="qqL-0F-qmv">
+                                <rect key="frame" x="20" y="184" width="280" height="258"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="diaryContent" destination="qqL-0F-qmv" id="zKS-Eo-5ua"/>
+                        <outlet property="diaryDate" destination="bKv-p0-SsZ" id="gj3-rQ-LAT"/>
+                        <outlet property="diaryTitle" destination="rL3-SL-sgZ" id="b4m-ys-XCT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pzp-8e-QV2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="278" y="-343"/>
         </scene>
         <!--Detail Diary View Controller-->
         <scene sceneID="q4p-LG-Eqg">
@@ -83,7 +151,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MJa-db-YdF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="366" y="96"/>
+            <point key="canvasLocation" x="587" y="111"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="FoJ-7A-Bgk">
