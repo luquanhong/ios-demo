@@ -19,6 +19,7 @@
 		A51FC8D919A36F2800D25040 /* DiaryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A51FC8D819A36F2800D25040 /* DiaryListViewController.m */; };
 		A555FC6E19B8669B0015DD7F /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A555FC6D19B8669B0015DD7F /* CameraViewController.m */; };
 		A555FC7419B88C270015DD7F /* ImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A555FC7319B88C270015DD7F /* ImageStore.m */; };
+		A555FC7B19B99A120015DD7F /* DiaryStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A555FC7A19B99A120015DD7F /* DiaryStore.m */; };
 		A5A52A3E19B81CFE00F9F919 /* CreateDiaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A52A3D19B81CFE00F9F919 /* CreateDiaryViewController.m */; };
 		A5AE941019A5DF87003CA51A /* DetailDiaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5AE940F19A5DF87003CA51A /* DetailDiaryViewController.m */; };
 		A5AE941619A6DAEC003CA51A /* Diary.m in Sources */ = {isa = PBXBuildFile; fileRef = A5AE941519A6DAEC003CA51A /* Diary.m */; };
@@ -65,6 +66,8 @@
 		A555FC6D19B8669B0015DD7F /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CameraViewController.m; path = ../../CameraViewController.m; sourceTree = "<group>"; };
 		A555FC7219B88C270015DD7F /* ImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageStore.h; sourceTree = "<group>"; };
 		A555FC7319B88C270015DD7F /* ImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageStore.m; sourceTree = "<group>"; };
+		A555FC7919B99A120015DD7F /* DiaryStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiaryStore.h; sourceTree = "<group>"; };
+		A555FC7A19B99A120015DD7F /* DiaryStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiaryStore.m; sourceTree = "<group>"; };
 		A5A52A3C19B81CFE00F9F919 /* CreateDiaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreateDiaryViewController.h; path = ../../CreateDiaryViewController.h; sourceTree = "<group>"; };
 		A5A52A3D19B81CFE00F9F919 /* CreateDiaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreateDiaryViewController.m; path = ../../CreateDiaryViewController.m; sourceTree = "<group>"; };
 		A5AE940E19A5DF87003CA51A /* DetailDiaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailDiaryViewController.h; path = ../../DetailDiaryViewController.h; sourceTree = "<group>"; };
@@ -138,6 +141,8 @@
 				A5AE941519A6DAEC003CA51A /* Diary.m */,
 				A555FC7219B88C270015DD7F /* ImageStore.h */,
 				A555FC7319B88C270015DD7F /* ImageStore.m */,
+				A555FC7919B99A120015DD7F /* DiaryStore.h */,
+				A555FC7A19B99A120015DD7F /* DiaryStore.m */,
 			);
 			name = Model;
 			path = mode;
@@ -357,6 +362,7 @@
 				A5B1A11219A33A85009863AA /* AppDelegate.m in Sources */,
 				A5B1A10E19A33A85009863AA /* main.m in Sources */,
 				A555FC6E19B8669B0015DD7F /* CameraViewController.m in Sources */,
+				A555FC7B19B99A120015DD7F /* DiaryStore.m in Sources */,
 				A555FC7419B88C270015DD7F /* ImageStore.m in Sources */,
 				A51FC8D919A36F2800D25040 /* DiaryListViewController.m in Sources */,
 				A51865A119A364950023F236 /* LocationViewController.m in Sources */,

@@ -49,4 +49,29 @@
     return self;
 }
 
+#pragma mark - NSCoding protocol
+
+- (void)encodeWithCoder:(NSCoder *)aCoder
+{
+    [aCoder encodeObject:self.title forKey:@"title"];
+    [aCoder encodeObject:self.content forKey:@"content"];
+    [aCoder encodeObject:self.dateCreate forKey:@"dateCreate"];
+    [aCoder encodeObject:self.photoKey forKey:@"photoKey"];
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super init];
+    
+    if(self){
+        [self setTitle:[aDecoder decodeObjectForKey:@"title"]];
+        [self setContent:[aDecoder decodeObjectForKey:@"content"]];
+        [self setPhotoKey:[aDecoder decodeObjectForKey:@"photoKey"]];
+        
+        _dateCreate = [aDecoder decodeObjectForKey:@"dateCreate"];
+    }
+    
+    return self;
+}
+
 @end

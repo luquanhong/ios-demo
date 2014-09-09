@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Diary : NSObject
+@interface Diary : NSObject <NSCoding>
 
 @property (strong, nonatomic) NSString *title;
 @property (strong, nonatomic) NSString *content;

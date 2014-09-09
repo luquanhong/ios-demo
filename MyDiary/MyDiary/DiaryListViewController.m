@@ -9,6 +9,7 @@
 #import "DiaryListViewController.h"
 #import "DetailDiaryViewController.h"
 #import "Diary.h"
+#import "DiaryStore.h"
 
 @interface DiaryListViewController ()
 
@@ -25,19 +26,28 @@
     return self;
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    NSLog(@"diary list view viewWillAppear enter");
+    
+    self.diaries = (NSMutableArray*)[[DiaryStore defaultStore] diaries];
+    
+    [super viewWillAppear:animated];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     NSLog(@"diary list view viewdidload enter");
     
     
-    Diary *a = [[Diary alloc] initWithTitle:@"the First Diary" content:@"the first diary content" ];
-    Diary *b = [[Diary alloc] initWithTitle:@"the Second Diary" content:@"the second diary content" ];
-    Diary *c = [[Diary alloc] initWithTitle:@"the Third Diary" content:@"the third diary content" ];
-    Diary *d = [[Diary alloc] initWithTitle:@"the Forth Diary" content:@"the forth diary content" ];
-    Diary *e = [[Diary alloc] initWithTitle:@"the Five Diary" content:@"the five diary content" ];
-    
-    self.diaries = [NSMutableArray arrayWithObjects:a, b, c, d, e, nil];
+//    Diary *a = [[Diary alloc] initWithTitle:@"the First Diary" content:@"the first diary content" ];
+//    Diary *b = [[Diary alloc] initWithTitle:@"the Second Diary" content:@"the second diary content" ];
+//    Diary *c = [[Diary alloc] initWithTitle:@"the Third Diary" content:@"the third diary content" ];
+//    Diary *d = [[Diary alloc] initWithTitle:@"the Forth Diary" content:@"the forth diary content" ];
+//    Diary *e = [[Diary alloc] initWithTitle:@"the Five Diary" content:@"the five diary content" ];
+//    
+//    self.diaries = [NSMutableArray arrayWithObjects:a, b, c, d, e, nil];
     
 //    
 //    UIBarButtonItem* bbi = [[ UIBarButtonItem alloc] initWithBarButtonSystemItem: UIBarButtonSystemItemAdd target: self  action: @selector(addNewDiary:) ];
