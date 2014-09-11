@@ -78,7 +78,11 @@
                                             <segue destination="mps-Fa-BhE" kind="modal" identifier="TakePicture" modalTransitionStyle="coverVertical" id="Zxp-Mu-54X"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="Audio" id="SBA-hb-7RN"/>
+                                    <barButtonItem title="Audio" id="SBA-hb-7RN">
+                                        <connections>
+                                            <segue destination="Dcs-gm-yV0" kind="modal" identifier="Record" id="EUg-pX-6a6"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="5fa-5G-fHa"/>
                                     <barButtonItem title="Save" id="z4V-Zn-CsR">
                                         <connections>
@@ -123,6 +127,64 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pzp-8e-QV2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="278" y="-343"/>
+        </scene>
+        <!--Record View Controller-->
+        <scene sceneID="ZSw-Uz-P3o">
+            <objects>
+                <viewController id="Dcs-gm-yV0" customClass="RecordViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KuQ-i9-W7H">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Zbn-ky-0yp">
+                                <rect key="frame" x="0.0" y="81" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="return" id="myh-y7-jXr">
+                                        <connections>
+                                            <action selector="doDismiss:" destination="Dcs-gm-yV0" id="zED-G0-tDF"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Lie-3G-v2K">
+                                <rect key="frame" x="139" y="181" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MfJ-4i-05l">
+                                <rect key="frame" x="140" y="246" width="44" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="record">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="recordOption:" destination="Dcs-gm-yV0" eventType="touchUpInside" id="ZiC-2z-LiR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uyg-3K-exn">
+                                <rect key="frame" x="140" y="310" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="play">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playOption:" destination="Dcs-gm-yV0" eventType="touchUpInside" id="gdu-ie-zlA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="playButton" destination="uyg-3K-exn" id="F5L-1f-pG2"/>
+                        <outlet property="recordButton" destination="MfJ-4i-05l" id="zGD-Y1-q9D"/>
+                        <outlet property="recordInfo" destination="Lie-3G-v2K" id="bGd-t2-6FX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MVd-fK-JeQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="539" y="-944"/>
         </scene>
         <!--Camera View Controller-->
         <scene sceneID="JIW-Vr-a89">

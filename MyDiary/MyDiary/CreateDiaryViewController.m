@@ -59,6 +59,13 @@
         cameraViewController.delegate = self;
         cameraViewController.diary = self.diary;
     }
+    
+    if( [segue.identifier isEqualToString:@"Record"])
+    {
+        RecordViewController *recordViewController = (RecordViewController*)[segue destinationViewController];
+        recordViewController.delegate = self;
+        recordViewController.diary = self.diary;
+    }
 }
 
 
@@ -88,6 +95,13 @@
 #pragma mark - CameraViewController delegate
 
 - (void)cameraViewControllerDidReturn:(CameraViewController*)cameraViewController
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+#pragma mark - RecordViewController delegate
+
+- (void)recordViewControllerDidReturn:(RecordViewController*)recordViewController
 {
     [self dismissViewControllerAnimated:YES completion:nil];
 }

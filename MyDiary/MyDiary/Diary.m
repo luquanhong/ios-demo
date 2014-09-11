@@ -57,6 +57,7 @@
     [aCoder encodeObject:self.content forKey:@"content"];
     [aCoder encodeObject:self.dateCreate forKey:@"dateCreate"];
     [aCoder encodeObject:self.photoKey forKey:@"photoKey"];
+    [aCoder encodeObject:self.audioFileName forKey:@"audioFileName"];
 }
 
 - (id)initWithCoder:(NSCoder *)aDecoder
@@ -69,6 +70,7 @@
         [self setPhotoKey:[aDecoder decodeObjectForKey:@"photoKey"]];
         
         _dateCreate = [aDecoder decodeObjectForKey:@"dateCreate"];
+        [self setAudioFileName:[aDecoder decodeObjectForKey:@"audioFileName"]];
     }
     
     return self;

@@ -17,6 +17,9 @@
 		A518659E19A3635F0023F236 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A518659D19A3635F0023F236 /* CoreLocation.framework */; };
 		A51865A119A364950023F236 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A51865A019A364950023F236 /* LocationViewController.m */; };
 		A51FC8D919A36F2800D25040 /* DiaryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A51FC8D819A36F2800D25040 /* DiaryListViewController.m */; };
+		A5472D7619C17FCD00AAB1D5 /* RecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5472D7519C17FCD00AAB1D5 /* RecordViewController.m */; };
+		A5472D7A19C1B15300AAB1D5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5472D7919C1B15300AAB1D5 /* AVFoundation.framework */; };
+		A5472D7B19C1B6FD00AAB1D5 /* RecordViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = A5472D7419C17FCD00AAB1D5 /* RecordViewController.h */; };
 		A555FC6E19B8669B0015DD7F /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A555FC6D19B8669B0015DD7F /* CameraViewController.m */; };
 		A555FC7419B88C270015DD7F /* ImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A555FC7319B88C270015DD7F /* ImageStore.m */; };
 		A555FC7B19B99A120015DD7F /* DiaryStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A555FC7A19B99A120015DD7F /* DiaryStore.m */; };
@@ -62,6 +65,9 @@
 		A51865A019A364950023F236 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationViewController.m; path = ../../LocationViewController.m; sourceTree = "<group>"; };
 		A51FC8D719A36F2800D25040 /* DiaryListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DiaryListViewController.h; path = ../../DiaryListViewController.h; sourceTree = "<group>"; };
 		A51FC8D819A36F2800D25040 /* DiaryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiaryListViewController.m; path = ../../DiaryListViewController.m; sourceTree = "<group>"; };
+		A5472D7419C17FCD00AAB1D5 /* RecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordViewController.h; sourceTree = "<group>"; };
+		A5472D7519C17FCD00AAB1D5 /* RecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordViewController.m; sourceTree = "<group>"; };
+		A5472D7919C1B15300AAB1D5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A555FC6C19B8669B0015DD7F /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraViewController.h; path = ../../CameraViewController.h; sourceTree = "<group>"; };
 		A555FC6D19B8669B0015DD7F /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CameraViewController.m; path = ../../CameraViewController.m; sourceTree = "<group>"; };
 		A555FC7219B88C270015DD7F /* ImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageStore.h; sourceTree = "<group>"; };
@@ -101,6 +107,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A518659E19A3635F0023F236 /* CoreLocation.framework in Frameworks */,
+				A5472D7A19C1B15300AAB1D5 /* AVFoundation.framework in Frameworks */,
 				A5B1A10419A33A85009863AA /* CoreGraphics.framework in Frameworks */,
 				A5B1A10619A33A85009863AA /* UIKit.framework in Frameworks */,
 				A5B1A10219A33A85009863AA /* Foundation.framework in Frameworks */,
@@ -168,10 +175,12 @@
 				A51FC8D819A36F2800D25040 /* DiaryListViewController.m */,
 				A5AE940E19A5DF87003CA51A /* DetailDiaryViewController.h */,
 				A5AE940F19A5DF87003CA51A /* DetailDiaryViewController.m */,
-				A555FC6D19B8669B0015DD7F /* CameraViewController.m */,
 				A5A52A3C19B81CFE00F9F919 /* CreateDiaryViewController.h */,
 				A5A52A3D19B81CFE00F9F919 /* CreateDiaryViewController.m */,
+				A555FC6D19B8669B0015DD7F /* CameraViewController.m */,
 				A555FC6C19B8669B0015DD7F /* CameraViewController.h */,
+				A5472D7419C17FCD00AAB1D5 /* RecordViewController.h */,
+				A5472D7519C17FCD00AAB1D5 /* RecordViewController.m */,
 			);
 			name = Controller;
 			path = mode/Controller;
@@ -200,6 +209,7 @@
 		A5B1A10019A33A85009863AA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A5472D7919C1B15300AAB1D5 /* AVFoundation.framework */,
 				A518659D19A3635F0023F236 /* CoreLocation.framework */,
 				A5B1A10119A33A85009863AA /* Foundation.framework */,
 				A5B1A10319A33A85009863AA /* CoreGraphics.framework */,
@@ -355,9 +365,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5472D7B19C1B6FD00AAB1D5 /* RecordViewController.h in Sources */,
 				A5B1A11819A33A85009863AA /* AboutViewController.m in Sources */,
 				A5AE941619A6DAEC003CA51A /* Diary.m in Sources */,
 				A5A52A3E19B81CFE00F9F919 /* CreateDiaryViewController.m in Sources */,
+				A5472D7619C17FCD00AAB1D5 /* RecordViewController.m in Sources */,
 				A5AE941019A5DF87003CA51A /* DetailDiaryViewController.m in Sources */,
 				A5B1A11219A33A85009863AA /* AppDelegate.m in Sources */,
 				A5B1A10E19A33A85009863AA /* main.m in Sources */,

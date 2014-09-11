@@ -15,6 +15,7 @@
 @property (nonatomic, readonly, getter = dateCreate) NSData *dateCreate;
 
 @property (strong, nonatomic) NSString *photoKey;
+@property (strong, nonatomic) NSString *audioFileName;
 
 + (id)createData;
 

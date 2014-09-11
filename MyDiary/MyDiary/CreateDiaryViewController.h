@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Diary.h"
 #import "CameraViewController.h"
+#import "RecordViewController.h"
 
 @class CreateDiaryViewController;
 
