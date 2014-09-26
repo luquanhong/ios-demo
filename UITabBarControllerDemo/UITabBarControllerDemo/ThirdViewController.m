@@ -1,8 +1,8 @@
 //
 //  ThirdViewController.m
-//  UINavigationDemo
+//  UITabBarControllerDemo
 //
-//  Created by luquanhong on 14-9-16.
+//  Created by luquanhong on 14-9-24.
 //  Copyright (c) 2014年 yy. All rights reserved.
 //
 
@@ -27,17 +27,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
-    [self.navigationController setToolbarHidden:NO animated:YES];
-    
-//    //自定义Bar Title
-//    UILabel *label = [[UILabel alloc] init];
-//    label.text = @"god";
-//    label.userInteractionEnabled = YES;
-//    label.enabled = YES;
-//    
-//    
-//    self.navigationItem.titleView = label;
 }
 
 - (void)didReceiveMemoryWarning

@@ -36,14 +36,42 @@
     self.navigationItem.leftBarButtonItem = leftButton;
     self.navigationItem.rightBarButtonItem = rightButton;
     
-    //在Nav Bar中添加SegmentedControl
-    NSArray *array = [NSArray arrayWithObjects:@"鸡翅", @"排骨", nil];
-    UISegmentedControl *segmentedControl = [[UISegmentedControl alloc] initWithItems:array];
-    segmentedControl.segmentedControlStyle = UISegmentedControlSegmentCenter;
-    [segmentedControl addTarget:self action:@selector(segmentedAction:) forControlEvents:UIControlEventValueChanged];
+//    //在Nav Bar中添加SegmentedControl
+//    NSArray *array = [NSArray arrayWithObjects:@"鸡翅", @"排骨", nil];
+//    UISegmentedControl *segmentedControl = [[UISegmentedControl alloc] initWithItems:array];
+//    segmentedControl.segmentedControlStyle = UISegmentedControlSegmentCenter;
+//    [segmentedControl addTarget:self action:@selector(segmentedAction:) forControlEvents:UIControlEventValueChanged];
+//    
+//    //自定义Navigation title
+//    self.navigationItem.titleView = segmentedControl;
     
-    //自定义Navigation title
-    self.navigationItem.titleView = segmentedControl;
+    //自定义Bar Title
+//    UILabel *label = [[UILabel alloc] init];
+//    [label setText:@"god"];
+//    label.userInteractionEnabled = YES;
+//    label.enabled = YES;
+//
+//    self.navigationItem.titleView = label;
+
+//    UIButton *button = [UIButton buttonWithType: UIButtonTypeRoundedRect];
+//    [button setTitle: @"自定义title" forState: UIControlStateNormal];
+//    [button sizeToFit];
+//    self.navigationItem.titleView = button;
+    
+    
+//    //3 way
+    UITextField *textField = [[UITextField alloc]initWithFrame:CGRectMake(0, 0, self.navigationController.navigationBar.frame.size.width, 21.0)];
+    self.navigationItem.titleView = textField;
+//    [textField becomeFirstResponder];
+
+
+    //不能覆盖viewTitle
+//    UITextField *textfieldTxt = [[UITextField alloc]initWithFrame:CGRectMake(78, 11, 170, 25)];
+//    textfieldTxt.backgroundColor = [UIColor clearColor];
+//    [textfieldTxt setAutocorrectionType:UITextAutocorrectionTypeNo];
+//    textfieldTxt.delegate = self;
+//    [self.navigationController.navigationBar addSubview:textfieldTxt];
+    
     
     //加入Toolbar
     [self.navigationController setToolbarHidden:NO animated:YES];
@@ -54,6 +82,8 @@
     UIBarButtonItem *flexItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
     [self setToolbarItems:[ NSArray arrayWithObjects: flexItem, one, flexItem, two, flexItem, three, flexItem, four, flexItem, nil]];
     
+
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -63,13 +93,31 @@
 }
 
 
-
 - (IBAction)gotoSecondView:(id)sender {
     
-    //如何跳转到下一个View中
-    SecondViewController *secondView = [[SecondViewController alloc] init];
-    [self.navigationController pushViewController:secondView animated:YES];
-    secondView.title = @"Second View";
+//    //如何跳转到下一个View中
+//    SecondViewController *secondView = [[SecondViewController alloc] init];
+//    [self.navigationController pushViewController:secondView animated:YES];
+//    secondView.title = @"Second View";
+    NSString *str1 = @"beiing welcome you";
+    NSString *str2 = @"beijing";
+    
+    NSString *netStr = @"http://www.yy.com";
+    
+    if([netStr hasPrefix:@"http:"]){
+        NSLog(@"netStr has prefix http:");
+    }else{
+        NSLog(@"netStr has not prefix http:");
+    }
+    
+    if ([netStr hasSuffix:@"com"]) {
+         NSLog(@"netStr has suffiix");
+    }else{
+         NSLog(@"netStr has not suffix http:");
+    }
+    
+    
+    
 }
 
 #pragma mark - selector action

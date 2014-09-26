@@ -24,6 +24,11 @@
     return self;
 }
 
+- (void)buttonClick:(id)sender
+{
+    NSLog(@"handleButton");
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -41,6 +46,22 @@
     toolBar.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;
     [toolBar setItems:[NSArray arrayWithObject: addButton]];
     [self.view addSubview:toolBar];
+    
+//    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 100, 280, 80)];
+//    [label setText:@"god"];
+//    label.userInteractionEnabled = YES;
+//    label.enabled = YES;
+//    
+//    [self.view addSubview:label];
+    
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 100, 280, 80)];
+    //UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [button setTitle:@"点击" forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor blackColor]forState:UIControlStateNormal];
+    
+    [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -48,6 +69,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+
 
 - (void)gotoThirdView:(id)sender
 {

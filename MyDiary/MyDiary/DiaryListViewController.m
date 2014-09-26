@@ -77,14 +77,20 @@
 {
 
     // Return the number of sections.
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 
     // Return the number of rows in the section.
-    return self.diaries.count;
+
+    //return self.diaries.count;
+  
+//    if(section == 0)
+//        return 3;
+//    else if(section == 1)
+        return 2;
 }
 
 
@@ -103,9 +109,9 @@
     
 //    cell.textLabel.text = @"first cell";
 //    cell.detailTextLabel.text = @"this is the cell description";
-    Diary *diary = [self.diaries objectAtIndex:indexPath.row];
-    cell.textLabel.text = [diary title];
-    cell.detailTextLabel.text = [[diary dateCreate] description];
+//    Diary *diary = [self.diaries objectAtIndex:indexPath.row];
+//    cell.textLabel.text = [diary title];
+//    cell.detailTextLabel.text = [[diary dateCreate] description];
     
     
     return cell;
