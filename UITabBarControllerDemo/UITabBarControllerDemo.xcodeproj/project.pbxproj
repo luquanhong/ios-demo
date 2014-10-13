@@ -215,6 +215,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = yy;
 				TargetAttributes = {
+					A5A6FC9A19D2B6B60075C0D1 = {
+						DevelopmentTeam = RA5DTC26D2;
+					};
 					A5A6FCB519D2B6B60075C0D1 = {
 						TestTargetID = A5A6FC9A19D2B6B60075C0D1;
 					};
@@ -387,6 +390,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UITabBarControllerDemo/UITabBarControllerDemo-Prefix.pch";
 				INFOPLIST_FILE = "UITabBarControllerDemo/UITabBarControllerDemo-Info.plist";
@@ -400,6 +404,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UITabBarControllerDemo/UITabBarControllerDemo-Prefix.pch";
 				INFOPLIST_FILE = "UITabBarControllerDemo/UITabBarControllerDemo-Info.plist";
@@ -467,6 +472,7 @@
 				A5A6FCC919D2B6B70075C0D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5A6FCCA19D2B6B70075C0D1 /* Build configuration list for PBXNativeTarget "UITabBarControllerDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +481,7 @@
 				A5A6FCCC19D2B6B70075C0D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

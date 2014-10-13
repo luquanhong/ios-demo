@@ -10,31 +10,41 @@
 	<string>UITabBarControllerDemo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>CC6469AE-E4FF-40D6-A4A5-C7F7D6DD6186</key>
+		<key>6bb9cc8a-16d4-5845-b8b3-ce57b7db7bff</key>
+		<string>https://github.com/luquanhong/ios-demo.git</string>
+		<key>83F0E600CD2266CCC43AAD33ED44768CDEFF256D</key>
 		<string>https://github.com/luquanhong/ios-demo.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>UITabBarControllerDemo/UITabBarControllerDemo.xcodeproj/project.xcworkspace</string>
+	<string>trunk/UITabBarControllerDemo/UITabBarControllerDemo.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>CC6469AE-E4FF-40D6-A4A5-C7F7D6DD6186</key>
-		<string>../../..</string>
+		<key>6bb9cc8a-16d4-5845-b8b3-ce57b7db7bff</key>
+		<string>../../../..</string>
+		<key>83F0E600CD2266CCC43AAD33ED44768CDEFF256D</key>
+		<string>../../../../../ios-demo</string>
 	</dict>
-	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/luquanhong/ios-demo.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>CC6469AE-E4FF-40D6-A4A5-C7F7D6DD6186</string>
+	<string>6bb9cc8a-16d4-5845-b8b3-ce57b7db7bff</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>CC6469AE-E4FF-40D6-A4A5-C7F7D6DD6186</string>
+			<string>83F0E600CD2266CCC43AAD33ED44768CDEFF256D</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ios-demo</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6bb9cc8a-16d4-5845-b8b3-ce57b7db7bff</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ios-demo.git</string>
 		</dict>
 	</array>
 </dict>

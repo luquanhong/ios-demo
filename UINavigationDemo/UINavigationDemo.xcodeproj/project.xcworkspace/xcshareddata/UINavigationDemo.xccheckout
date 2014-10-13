@@ -10,22 +10,24 @@
 	<string>UINavigationDemo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>6bb9cc8a-16d4-5845-b8b3-ce57b7db7bff</key>
+		<string>https://github.com/luquanhong/ios-demo.git</string>
 		<key>CC6469AE-E4FF-40D6-A4A5-C7F7D6DD6186</key>
 		<string>https://github.com/luquanhong/ios-demo.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>UINavigationDemo/UINavigationDemo.xcodeproj/project.xcworkspace</string>
+	<string>trunk/UINavigationDemo/UINavigationDemo.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>6bb9cc8a-16d4-5845-b8b3-ce57b7db7bff</key>
+		<string>../../../..</string>
 		<key>CC6469AE-E4FF-40D6-A4A5-C7F7D6DD6186</key>
-		<string>../../..</string>
+		<string>../../../../../ios-demo</string>
 	</dict>
-	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/luquanhong/ios-demo.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>CC6469AE-E4FF-40D6-A4A5-C7F7D6DD6186</string>
+	<string>6bb9cc8a-16d4-5845-b8b3-ce57b7db7bff</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -35,6 +37,14 @@
 			<string>CC6469AE-E4FF-40D6-A4A5-C7F7D6DD6186</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ios-demo</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6bb9cc8a-16d4-5845-b8b3-ce57b7db7bff</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ios-demo.git</string>
 		</dict>
 	</array>
 </dict>
