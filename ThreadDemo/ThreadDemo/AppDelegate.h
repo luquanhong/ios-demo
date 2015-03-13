@@ -8,7 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>{
+
+    int tickets;
+    int count;
+    NSThread *thread1;
+    NSThread *thread2;
+    NSLock *lock;
+    NSCondition *conditon;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 

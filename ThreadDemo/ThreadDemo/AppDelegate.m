@@ -17,6 +17,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    tickets = 100;
+    count =0;
+    
+    lock = [[NSLock alloc] init];
+    conditon = [[NSCondition alloc] init];
+    
+    thread1 = [[NSThread alloc] initWithTarget:self selector:@selector(run) object:nil];
+    [thread1 setName:@"Thread-1"];
+    [thread1 start];
+    
+    thread2 = [[NSThread alloc] initWithTarget:self selector:@selector(run) object:nil];
+    [thread2 setName:@"Thread-2"];
+    [thread2 start];
+    
     return YES;
 }
 
@@ -40,6 +55,27 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - commond method
+
+- (void)run{
+    
+    @synchronized(self){
+    
+        while (TRUE) {
+            //[lock lock];
+            if (tickets > 0) {
+                count = 100 - tickets;
+                [NSThread sleepForTimeInterval:0.9];
+                tickets--;
+                NSLog(@"current ticket is %d sale is %d name is %@", tickets, count, [[NSThread currentThread] name]);
+            }else{
+                break;
+            }
+            //[lock unlock];
+        }
+    }
 }
 
 @end
