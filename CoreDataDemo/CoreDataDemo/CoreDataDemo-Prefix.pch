@@ -1,0 +1,15 @@
+//
+//  CoreDataDemo-Prefix.pch
+//  CoreDataDemo
+//
+//  Created by 卢泉鸿 on 15/2/4.
+//  Copyright (c) 2015年 卢泉鸿. All rights reserved.
+//
+
+#ifndef CoreDataDemo_CoreDataDemo_Prefix_pch
+#define CoreDataDemo_CoreDataDemo_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif
