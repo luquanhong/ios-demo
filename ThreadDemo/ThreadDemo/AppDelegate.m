@@ -24,13 +24,13 @@
     lock = [[NSLock alloc] init];
     conditon = [[NSCondition alloc] init];
     
-    thread1 = [[NSThread alloc] initWithTarget:self selector:@selector(run) object:nil];
-    [thread1 setName:@"Thread-1"];
-    [thread1 start];
-    
-    thread2 = [[NSThread alloc] initWithTarget:self selector:@selector(run) object:nil];
-    [thread2 setName:@"Thread-2"];
-    [thread2 start];
+//    thread1 = [[NSThread alloc] initWithTarget:self selector:@selector(run) object:nil];
+//    [thread1 setName:@"Thread-1"];
+//    [thread1 start];
+//    
+//    thread2 = [[NSThread alloc] initWithTarget:self selector:@selector(run) object:nil];
+//    [thread2 setName:@"Thread-2"];
+//    [thread2 start];
     
     return YES;
 }

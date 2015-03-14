@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Person.h"
 
 @interface CDViewController : UIViewController
+{
+    NSMutableArray* people;
+}
+
+@property (weak, nonatomic) IBOutlet UITableView *mTableView;
+@property (strong, nonatomic) NSUndoManager* undoManager;
 
 @end

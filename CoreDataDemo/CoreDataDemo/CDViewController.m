@@ -7,8 +7,9 @@
 //
 
 #import "CDViewController.h"
+#import "AppDelegate.h"
 
-@interface CDViewController ()
+@interface CDViewController ()<NSFetchedResultsControllerDelegate>
 
 @end
 
@@ -17,6 +18,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    self.title = @"CoreDataDemo";
+    self.navigationItem.leftBarButtonItem = self.editButtonItem;
+    
+    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addPerson)];
+    self.navigationItem.rightBarButtonItem = addButton;
+    
+    [self dummy];
+    [self loadPeople];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,5 +43,58 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (AppDelegate*)appDelegate{
+    return (AppDelegate*)[[UIApplication sharedApplication] delegate];
+}
+
+- (void)dummy{
+
+    for (int i = 0; i < 10; i++) {
+        Person* person = [NSEntityDescription insertNewObjectForEntityForName:@"Person" inManagedObjectContext:[self appDelegate].managedObjectContext];
+        person.firstname = [NSString stringWithFormat:@"first %d", i];
+        person.lastname = [NSString stringWithFormat:@"last %d", i];
+        person.vip = [NSNumber numberWithBool:NO];
+    }
+    
+    NSError* error = nil;
+    if(![[self appDelegate].managedObjectContext save:&error]){
+    
+    }
+}
+
+- (void)loadPeople{
+
+    if(people) people = nil;
+    
+    people = [[NSMutableArray alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Person" inManagedObjectContext:[self appDelegate].managedObjectContext];
+    
+    NSFetchRequest* fetchRequest = [[NSFetchRequest alloc] init];
+    [fetchRequest setEntity:entity];
+    NSError* error = nil;
+    NSArray* fecthedObjects =[[self appDelegate].managedObjectContext executeFetchRequest:fetchRequest error:&error];
+    for (int i = 0; i < [fecthedObjects count]; i++) {
+        Person* obj = (Person*)[fecthedObjects objectAtIndex:i];
+        [people addObject:obj];
+    }
+    
+    [self.mTableView reloadData];
+}
+
+#pragma mark - button
+
+- (void)addPerson{
+
+}
+
+#pragma mark - fetch request delegate
+
+- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller{
+    [self.mTableView reloadData];
+}
+
+#pragma mark - tableview
+
 
 @end

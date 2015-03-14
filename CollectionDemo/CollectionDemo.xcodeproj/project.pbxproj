@@ -13,8 +13,11 @@
 		A59E129D1A85C59C00EF3EE4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A59E129C1A85C59C00EF3EE4 /* ViewController.m */; };
 		A59E12A01A85C59C00EF3EE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A59E129E1A85C59C00EF3EE4 /* Main.storyboard */; };
 		A59E12A21A85C59C00EF3EE4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A59E12A11A85C59C00EF3EE4 /* Images.xcassets */; };
-		A59E12A51A85C59C00EF3EE4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A59E12A31A85C59C00EF3EE4 /* LaunchScreen.xib */; };
 		A59E12B11A85C59C00EF3EE4 /* CollectionDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A59E12B01A85C59C00EF3EE4 /* CollectionDemoTests.m */; };
+		A59E12C31A86055F00EF3EE4 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A59E12C11A86055F00EF3EE4 /* CollectionViewController.m */; };
+		A59E12C41A86055F00EF3EE4 /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A59E12C21A86055F00EF3EE4 /* CollectionViewController.xib */; };
+		A59E12C81A860E8100EF3EE4 /* MultipleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A59E12C61A860E8100EF3EE4 /* MultipleCell.m */; };
+		A59E12C91A860E8100EF3EE4 /* MultipleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A59E12C71A860E8100EF3EE4 /* MultipleCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,10 +41,15 @@
 		A59E129C1A85C59C00EF3EE4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A59E129F1A85C59C00EF3EE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A59E12A11A85C59C00EF3EE4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A59E12A41A85C59C00EF3EE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A59E12AA1A85C59C00EF3EE4 /* CollectionDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A59E12AF1A85C59C00EF3EE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A59E12B01A85C59C00EF3EE4 /* CollectionDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionDemoTests.m; sourceTree = "<group>"; };
+		A59E12C01A86055F00EF3EE4 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		A59E12C11A86055F00EF3EE4 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		A59E12C21A86055F00EF3EE4 /* CollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewController.xib; sourceTree = "<group>"; };
+		A59E12C51A860E8100EF3EE4 /* MultipleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipleCell.h; sourceTree = "<group>"; };
+		A59E12C61A860E8100EF3EE4 /* MultipleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipleCell.m; sourceTree = "<group>"; };
+		A59E12C71A860E8100EF3EE4 /* MultipleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MultipleCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,9 +97,14 @@
 				A59E129C1A85C59C00EF3EE4 /* ViewController.m */,
 				A59E129E1A85C59C00EF3EE4 /* Main.storyboard */,
 				A59E12A11A85C59C00EF3EE4 /* Images.xcassets */,
-				A59E12A31A85C59C00EF3EE4 /* LaunchScreen.xib */,
 				A59E12981A85C59C00EF3EE4 /* CollectionDemo.xcdatamodeld */,
 				A59E12911A85C59C00EF3EE4 /* Supporting Files */,
+				A59E12C01A86055F00EF3EE4 /* CollectionViewController.h */,
+				A59E12C11A86055F00EF3EE4 /* CollectionViewController.m */,
+				A59E12C21A86055F00EF3EE4 /* CollectionViewController.xib */,
+				A59E12C51A860E8100EF3EE4 /* MultipleCell.h */,
+				A59E12C61A860E8100EF3EE4 /* MultipleCell.m */,
+				A59E12C71A860E8100EF3EE4 /* MultipleCell.xib */,
 			);
 			path = CollectionDemo;
 			sourceTree = "<group>";
@@ -202,8 +215,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A59E12C41A86055F00EF3EE4 /* CollectionViewController.xib in Resources */,
 				A59E12A01A85C59C00EF3EE4 /* Main.storyboard in Resources */,
-				A59E12A51A85C59C00EF3EE4 /* LaunchScreen.xib in Resources */,
+				A59E12C91A860E8100EF3EE4 /* MultipleCell.xib in Resources */,
 				A59E12A21A85C59C00EF3EE4 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,7 +239,9 @@
 				A59E12971A85C59C00EF3EE4 /* AppDelegate.m in Sources */,
 				A59E129A1A85C59C00EF3EE4 /* CollectionDemo.xcdatamodeld in Sources */,
 				A59E129D1A85C59C00EF3EE4 /* ViewController.m in Sources */,
+				A59E12C31A86055F00EF3EE4 /* CollectionViewController.m in Sources */,
 				A59E12941A85C59C00EF3EE4 /* main.m in Sources */,
+				A59E12C81A860E8100EF3EE4 /* MultipleCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +270,6 @@
 				A59E129F1A85C59C00EF3EE4 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A59E12A31A85C59C00EF3EE4 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A59E12A41A85C59C00EF3EE4 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -301,7 +309,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -336,7 +344,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -347,9 +355,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CollectionDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -357,9 +367,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CollectionDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -416,6 +428,7 @@
 				A59E12B61A85C59C00EF3EE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A59E12B71A85C59C00EF3EE4 /* Build configuration list for PBXNativeTarget "CollectionDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +437,7 @@
 				A59E12B91A85C59C00EF3EE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
