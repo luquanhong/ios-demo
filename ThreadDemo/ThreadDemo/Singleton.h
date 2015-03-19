@@ -10,4 +10,7 @@
 
 @interface Singleton : NSObject
 
++ (Singleton*)shareInstance;
+//+ (void)releaseInstance;
+
 @end

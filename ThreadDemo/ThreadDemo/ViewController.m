@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Singleton.h"
 
 #define URL @"http://avatar.csdn.net/2/C/D/1_totogo2010.jpg"
 
@@ -24,6 +25,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     NSLog(@"----");
+    
+    [Singleton shareInstance];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -136,4 +139,15 @@
     });
     
 }
+
+
+- (IBAction)changeAction:(id)sender {
+    
+    [UIView beginAnimations:@"animaions" context:nil];
+    [UIView setAnimationDuration:1.0f];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+    [UIView setAnimationTransition:UIViewAnimationTransitionCurlUp forView:self.view cache:YES];
+    [UIView commitAnimations];
+}
+
 @end
