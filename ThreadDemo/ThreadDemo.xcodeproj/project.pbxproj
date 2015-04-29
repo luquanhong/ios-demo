@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A500B5A11AC00DB0002BE647 /* ThreedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A500B5A01AC00DB0002BE647 /* ThreedViewController.m */; };
 		A514F3B51AB444000053BFF6 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A514F3B41AB444000053BFF6 /* SecondViewController.m */; };
 		A514F5AF1AB6B2E80053BFF6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A514F5AE1AB6B2E80053BFF6 /* CFNetwork.framework */; };
 		A514F5B11AB6B2FC0053BFF6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A514F5B01AB6B2FC0053BFF6 /* SystemConfiguration.framework */; };
@@ -35,6 +36,7 @@
 		A514F77D1AB6BC650053BFF6 /* ASIS3Request.m in Sources */ = {isa = PBXBuildFile; fileRef = A514F7671AB6BC650053BFF6 /* ASIS3Request.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A514F77E1AB6BC650053BFF6 /* ASIS3ServiceRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A514F7691AB6BC650053BFF6 /* ASIS3ServiceRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A514F7811AB6BD410053BFF6 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A514F77F1AB6BD410053BFF6 /* Reachability.m */; };
+		A54D921A1ABA805000F50400 /* snaguosha.png in Resources */ = {isa = PBXBuildFile; fileRef = A54D92191ABA805000F50400 /* snaguosha.png */; };
 		A585707D1AB421AD00F31208 /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = A585707C1AB421AD00F31208 /* Singleton.m */; };
 		A5F373471AB2C3960002E8DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F373461AB2C3960002E8DE /* main.m */; };
 		A5F3734A1AB2C3960002E8DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F373491AB2C3960002E8DE /* AppDelegate.m */; };
@@ -56,6 +58,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A500B59F1AC00DB0002BE647 /* ThreedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreedViewController.h; sourceTree = "<group>"; };
+		A500B5A01AC00DB0002BE647 /* ThreedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreedViewController.m; sourceTree = "<group>"; };
 		A514F3B31AB444000053BFF6 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		A514F3B41AB444000053BFF6 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		A514F5AE1AB6B2E80053BFF6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -112,6 +116,7 @@
 		A514F7691AB6BC650053BFF6 /* ASIS3ServiceRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIS3ServiceRequest.m; sourceTree = "<group>"; };
 		A514F77F1AB6BD410053BFF6 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		A514F7801AB6BD410053BFF6 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		A54D92191ABA805000F50400 /* snaguosha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snaguosha.png; sourceTree = "<group>"; };
 		A585707B1AB421AD00F31208 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		A585707C1AB421AD00F31208 /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
 		A5F373411AB2C3960002E8DE /* ThreadDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreadDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -263,6 +268,8 @@
 				A5F373441AB2C3960002E8DE /* Supporting Files */,
 				A585707B1AB421AD00F31208 /* Singleton.h */,
 				A585707C1AB421AD00F31208 /* Singleton.m */,
+				A500B59F1AC00DB0002BE647 /* ThreedViewController.h */,
+				A500B5A01AC00DB0002BE647 /* ThreedViewController.m */,
 			);
 			path = ThreadDemo;
 			sourceTree = "<group>";
@@ -270,6 +277,7 @@
 		A5F373441AB2C3960002E8DE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A54D92191ABA805000F50400 /* snaguosha.png */,
 				A5F373451AB2C3960002E8DE /* Info.plist */,
 				A5F373461AB2C3960002E8DE /* main.m */,
 			);
@@ -376,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5F373501AB2C3960002E8DE /* Main.storyboard in Resources */,
+				A54D921A1ABA805000F50400 /* snaguosha.png in Resources */,
 				A5F373551AB2C3960002E8DE /* LaunchScreen.xib in Resources */,
 				A5F373521AB2C3960002E8DE /* Images.xcassets in Resources */,
 			);
@@ -415,6 +424,7 @@
 				A514F77D1AB6BC650053BFF6 /* ASIS3Request.m in Sources */,
 				A514F7701AB6BC650053BFF6 /* ASIInputStream.m in Sources */,
 				A514F76C1AB6BC650053BFF6 /* ASIDataDecompressor.m in Sources */,
+				A500B5A11AC00DB0002BE647 /* ThreedViewController.m in Sources */,
 				A514F7711AB6BC650053BFF6 /* ASINetworkQueue.m in Sources */,
 				A514F7741AB6BC650053BFF6 /* ASICloudFilesContainerRequest.m in Sources */,
 				A5F3734A1AB2C3960002E8DE /* AppDelegate.m in Sources */,

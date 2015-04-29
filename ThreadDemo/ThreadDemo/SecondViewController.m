@@ -46,6 +46,7 @@
 @interface SecondViewController (){
 
     UIView *moveView;
+    UIImageView *imageView;
 }
 
 @end
@@ -97,6 +98,10 @@
     button4.backgroundColor = [UIColor blueColor];
     [button4 addTarget:self action:@selector(change4:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button4];
+    
+    imageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 300, 128, 193)];
+    imageView.image = [UIImage imageNamed:@"snaguosha.png"];
+    [self.view addSubview:imageView];
 }
 
 - (void)didReceiveMemoryWarning {
